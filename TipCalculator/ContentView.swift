@@ -43,7 +43,7 @@ struct ContentView: View {
     }
     var body: some View {
         ZStack(){
-            Color("DefaultTheme")
+            Color("AccentColor")
                 .edgesIgnoringSafeArea(.all)
             VStack(){
                 Text("Tip Calculator 💰")
