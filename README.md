@@ -8,7 +8,7 @@ This is a tip calculator I built using Swift and XCode.
 - I changed the picker from segmented to menu.
 - Added some spacing and other aesthetic changes. 
 
-"Aesthic + Split Bill" Commit:
+"Aesthetic + Split Bill" Commit:
 - Changed size of text field
 - Fixed it so that the keyboard goes away when you tap out of the textfield
 - Added an app icon & color scheme
