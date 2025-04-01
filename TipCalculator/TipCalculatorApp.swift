@@ -12,6 +12,7 @@ struct TipCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.environment(\.font, .custom("Lato-Regular", size: 18))
         }
     }
 }

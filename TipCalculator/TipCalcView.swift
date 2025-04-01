@@ -9,11 +9,13 @@ import SwiftUI
 
 struct TipCalcView: View {
 	
+
 	@State private var billAmount = ""
-	@State private var tipPercent = 20
+	@AppStorage("defaultTip") private var tipPercent: Int = 20
 	@State private var isSplitting = false
 	@State private var splitCount = ""
 	private let tipOptions = [5, 10, 15, 18, 20, 25]
+	
 	
 	var tipAmount: Double {
 		//convert string to double
@@ -48,27 +50,38 @@ struct TipCalcView: View {
 				.font(.largeTitle)
 				.bold()
 				.multilineTextAlignment(.center)
-				.padding(.top, 20)
-			Spacer()
+				.padding(.top, 35)
+				.padding(.bottom, 125)
 			
 			//enter bill amount
-			Text("Enter bill total below.")
-			TextField("Bill Amount", text: $billAmount)
-				.frame(width: 100)
+			Text("Enter bill total below:")
+			//input
+			TextField("$0.00", text: $billAmount)
+				.frame(width: 50, height: 10)
 				.keyboardType(.decimalPad)
-				.textFieldStyle(RoundedBorderTextFieldStyle())
 				.padding()
-			
+				.background(Color("PickerTheme"))
+				.cornerRadius(15)
+				
 			//tip picker
 			Text("How much do you want to tip?")
 			Picker("Tip Percentage", selection: $tipPercent){
 				ForEach(tipOptions, id: \.self){ tipPercent in
 					Text("\(tipPercent)%")
 				}//forEach
-			}//tip picker
-			.pickerStyle(WheelPickerStyle())
-			Spacer().frame(height: 20)
+				
+			}//tip picker styling
+			.pickerStyle(MenuPickerStyle())
+			.background(Color("PickerTheme"))
+			.cornerRadius(10)
+			.clipped()
 			
+			//divider here
+			Divider()
+				.padding()
+
+				
+
 			//add yes/no button. no = tip + total. yes = input + per person total
 			Text("Are you splitting the bill?")
 			Picker("Splitting the bill?", selection: $isSplitting){
@@ -78,7 +91,7 @@ struct TipCalcView: View {
 			.pickerStyle(SegmentedPickerStyle())
 			.frame(width: 150)
 			.padding()
-			
+
 			//split bill
 			if isSplitting {
 				Text("How many people are splitting?")

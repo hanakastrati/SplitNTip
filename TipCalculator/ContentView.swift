@@ -9,24 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
 	@State private var selectedTab = 0
+	@AppStorage("colorTheme") private var colortheme: String = "DefaultTheme"
 	
 	var body: some View{
+		
 		ZStack{
-			//background color
-			Color("AccentColor")
-				.ignoresSafeArea()
-			
 			TabView(selection: $selectedTab){
 				TipCalcView()
 					.tabItem{
 						Label("Tip Calculator", systemImage: "dollarsign.bank.building")
+							.font(.custom("Lato-Regular", size: 20))
 					}
+				
 					.tag(0)
+					.background(Color(colortheme))
+
 				SettingsView()
 					.tabItem{
 						Label("Settings", systemImage: "gear")
 					}
-					.tag(1)
+					.tag(1) 
+					.background(Color(colortheme))
 			}//tab
 		}//zstack
 	}//body
