@@ -1,5 +1,5 @@
 //
-//  TipCalcView.swift
+//  SplitTipCalcView.swift
 //  TipCalculator
 //
 //  Created by Hana Kastrati on 3/7/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TipCalcView: View {
+struct SplitTipCalcView: View {
 	
 
 	@State private var billAmount = ""
@@ -27,13 +27,20 @@ struct TipCalcView: View {
 	} //var tip amount
 	
 	var totalAmount: Double {
+		//change from string to double type
+		let bill = Double(billAmount) ?? 0
+		//add tip to total for total amount
+		let total = bill + tipAmount
+		//return total amount
+		return total
+		
+		
+		
+	} // var total amt
+	
+	var totalPersonAmount : Double {
 		if isSplitting == false {
-			//change from string to double type
-			let bill = Double(billAmount) ?? 0
-			//add tip to total for total amount
-			let total = bill + tipAmount
-			//return total amount
-			return total
+			return totalAmount
 		} else {
 			let bill = Double(billAmount) ?? 0
 			let people = max(Double(splitCount) ?? 1, 1) //error handling for 0
@@ -41,7 +48,7 @@ struct TipCalcView: View {
 			
 			return total
 		}
-	} // var total amt
+	}
 	
 	var body: some View {
 		VStack(){
@@ -80,8 +87,6 @@ struct TipCalcView: View {
 			Divider()
 				.padding()
 
-				
-
 			//add yes/no button. no = tip + total. yes = input + per person total
 			Text("Are you splitting the bill?")
 			Picker("Splitting the bill?", selection: $isSplitting){
@@ -104,9 +109,12 @@ struct TipCalcView: View {
 			}//if is splitting
 			
 			if isSplitting == false {
+				Text("The tip amount is: $\(tipAmount, specifier: "%.2f")")
 				Text("Your total is: $\(totalAmount, specifier: "%.2f")")
 			} else {
-				Text("Each person pays: $\(totalAmount, specifier: "%.2f")")
+				Text("The tip amount is: $\(tipAmount, specifier: "%.2f")")
+				Text("Your bill total is: $\(totalAmount, specifier: "%.2f")")
+				Text("Total per person is: $\(totalPersonAmount, specifier: "%.2f")")
 					.font(.body)
 			}
 			Spacer()
@@ -127,5 +135,5 @@ extension View {
 }
 
 #Preview{
-	TipCalcView()
+	SplitTipCalcView()
 }

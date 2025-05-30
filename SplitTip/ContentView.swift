@@ -15,10 +15,9 @@ struct ContentView: View {
 		
 		ZStack{
 			TabView(selection: $selectedTab){
-				TipCalcView()
+				SplitTipCalcView()
 					.tabItem{
 						Label("Tip Calculator", systemImage: "dollarsign.bank.building")
-							.font(.custom("Lato-Regular", size: 20))
 					}
 				
 					.tag(0)
