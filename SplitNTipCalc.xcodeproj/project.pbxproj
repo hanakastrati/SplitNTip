@@ -41,16 +41,6 @@
 			path = SplitNTip;
 			sourceTree = "<group>";
 		};
-		D639D8592D75E38B00C7005A /* SplitTipTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SplitTipTests;
-			sourceTree = "<group>";
-		};
-		D639D8632D75E38B00C7005A /* SplitTipUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SplitTipUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +73,6 @@
 			children = (
 				D6E6C2872DBFFD14001DDB82 /* SplitNTipCalc-Info.plist */,
 				D639D8482D75E38900C7005A /* SplitNTip */,
-				D639D8592D75E38B00C7005A /* SplitTipTests */,
-				D639D8632D75E38B00C7005A /* SplitTipUITests */,
 				D6BBA2C02D76623A008A255C /* README.md */,
 				D639D8472D75E38900C7005A /* Products */,
 			);
@@ -138,9 +126,6 @@
 			dependencies = (
 				D639D8582D75E38B00C7005A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D639D8592D75E38B00C7005A /* SplitTipTests */,
-			);
 			name = SplitNTipCalcTests;
 			packageProductDependencies = (
 			);
@@ -160,9 +145,6 @@
 			);
 			dependencies = (
 				D639D8622D75E38B00C7005A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D639D8632D75E38B00C7005A /* SplitTipUITests */,
 			);
 			name = SplitNTipCalcUITests;
 			packageProductDependencies = (
@@ -409,7 +391,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
-				DEVELOPMENT_ASSET_PATHS = "\"SplitTip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SplitNTip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SplitNTipCalc-Info.plist";
@@ -446,7 +428,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
-				DEVELOPMENT_ASSET_PATHS = "\"SplitTip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SplitNTip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SplitNTipCalc-Info.plist";
