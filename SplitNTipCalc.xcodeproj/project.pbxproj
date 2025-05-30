@@ -28,44 +28,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D639D8462D75E38900C7005A /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D639D8562D75E38B00C7005A /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D639D8602D75E38B00C7005A /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D639D8462D75E38900C7005A /* Split & Tip: Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Split & Tip: Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D639D8562D75E38B00C7005A /* SplitNTipCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitNTipCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D639D8602D75E38B00C7005A /* SplitNTipCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitNTipCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BBA2C02D76623A008A255C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6E6C2872DBFFD14001DDB82 /* SplitNTipCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplitNTipCalc-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D669F95B2D8A6A8400ED21FD /* Exceptions for "TipCalculator" folder in "TipCalculator" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Fonts-Info.plist",
-			);
-			target = D639D8452D75E38900C7005A /* TipCalculator */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D621AD522D8555DF004E3F70 /* Font */ = {
+		D639D8482D75E38900C7005A /* SplitNTip */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Font;
+			path = SplitNTip;
 			sourceTree = "<group>";
 		};
-		D639D8482D75E38900C7005A /* TipCalculator */ = {
+		D639D8592D75E38B00C7005A /* SplitTipTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D669F95B2D8A6A8400ED21FD /* Exceptions for "TipCalculator" folder in "TipCalculator" target */,
-			);
-			path = TipCalculator;
+			path = SplitTipTests;
 			sourceTree = "<group>";
 		};
-		D639D8592D75E38B00C7005A /* TipCalculatorTests */ = {
+		D639D8632D75E38B00C7005A /* SplitTipUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TipCalculatorTests;
-			sourceTree = "<group>";
-		};
-		D639D8632D75E38B00C7005A /* TipCalculatorUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TipCalculatorUITests;
+			path = SplitTipUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -98,10 +81,10 @@
 		D639D83D2D75E38900C7005A = {
 			isa = PBXGroup;
 			children = (
-				D621AD522D8555DF004E3F70 /* Font */,
-				D639D8482D75E38900C7005A /* TipCalculator */,
-				D639D8592D75E38B00C7005A /* TipCalculatorTests */,
-				D639D8632D75E38B00C7005A /* TipCalculatorUITests */,
+				D6E6C2872DBFFD14001DDB82 /* SplitNTipCalc-Info.plist */,
+				D639D8482D75E38900C7005A /* SplitNTip */,
+				D639D8592D75E38B00C7005A /* SplitTipTests */,
+				D639D8632D75E38B00C7005A /* SplitTipUITests */,
 				D6BBA2C02D76623A008A255C /* README.md */,
 				D639D8472D75E38900C7005A /* Products */,
 			);
@@ -110,9 +93,9 @@
 		D639D8472D75E38900C7005A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D639D8462D75E38900C7005A /* TipCalculator.app */,
-				D639D8562D75E38B00C7005A /* TipCalculatorTests.xctest */,
-				D639D8602D75E38B00C7005A /* TipCalculatorUITests.xctest */,
+				D639D8462D75E38900C7005A /* Split & Tip: Tip Calculator.app */,
+				D639D8562D75E38B00C7005A /* SplitNTipCalcTests.xctest */,
+				D639D8602D75E38B00C7005A /* SplitNTipCalcUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D639D8452D75E38900C7005A /* TipCalculator */ = {
+		D639D8452D75E38900C7005A /* SplitNTipCalc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D639D86A2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "TipCalculator" */;
+			buildConfigurationList = D639D86A2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "SplitNTipCalc" */;
 			buildPhases = (
 				D639D8422D75E38900C7005A /* Sources */,
 				D639D8432D75E38900C7005A /* Frameworks */,
@@ -133,19 +116,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D621AD522D8555DF004E3F70 /* Font */,
-				D639D8482D75E38900C7005A /* TipCalculator */,
+				D639D8482D75E38900C7005A /* SplitNTip */,
 			);
-			name = TipCalculator;
+			name = SplitNTipCalc;
 			packageProductDependencies = (
 			);
 			productName = TipCalculator;
-			productReference = D639D8462D75E38900C7005A /* TipCalculator.app */;
+			productReference = D639D8462D75E38900C7005A /* Split & Tip: Tip Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D639D8552D75E38B00C7005A /* TipCalculatorTests */ = {
+		D639D8552D75E38B00C7005A /* SplitNTipCalcTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D639D86D2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */;
+			buildConfigurationList = D639D86D2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "SplitNTipCalcTests" */;
 			buildPhases = (
 				D639D8522D75E38B00C7005A /* Sources */,
 				D639D8532D75E38B00C7005A /* Frameworks */,
@@ -157,18 +139,18 @@
 				D639D8582D75E38B00C7005A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				D639D8592D75E38B00C7005A /* TipCalculatorTests */,
+				D639D8592D75E38B00C7005A /* SplitTipTests */,
 			);
-			name = TipCalculatorTests;
+			name = SplitNTipCalcTests;
 			packageProductDependencies = (
 			);
 			productName = TipCalculatorTests;
-			productReference = D639D8562D75E38B00C7005A /* TipCalculatorTests.xctest */;
+			productReference = D639D8562D75E38B00C7005A /* SplitNTipCalcTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D639D85F2D75E38B00C7005A /* TipCalculatorUITests */ = {
+		D639D85F2D75E38B00C7005A /* SplitNTipCalcUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D639D8702D75E38B00C7005A /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */;
+			buildConfigurationList = D639D8702D75E38B00C7005A /* Build configuration list for PBXNativeTarget "SplitNTipCalcUITests" */;
 			buildPhases = (
 				D639D85C2D75E38B00C7005A /* Sources */,
 				D639D85D2D75E38B00C7005A /* Frameworks */,
@@ -180,13 +162,13 @@
 				D639D8622D75E38B00C7005A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				D639D8632D75E38B00C7005A /* TipCalculatorUITests */,
+				D639D8632D75E38B00C7005A /* SplitTipUITests */,
 			);
-			name = TipCalculatorUITests;
+			name = SplitNTipCalcUITests;
 			packageProductDependencies = (
 			);
 			productName = TipCalculatorUITests;
-			productReference = D639D8602D75E38B00C7005A /* TipCalculatorUITests.xctest */;
+			productReference = D639D8602D75E38B00C7005A /* SplitNTipCalcUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +179,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					D639D8452D75E38900C7005A = {
 						CreatedOnToolsVersion = 16.2;
@@ -212,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D639D8412D75E38900C7005A /* Build configuration list for PBXProject "TipCalculator" */;
+			buildConfigurationList = D639D8412D75E38900C7005A /* Build configuration list for PBXProject "SplitNTipCalc" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -226,9 +208,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D639D8452D75E38900C7005A /* TipCalculator */,
-				D639D8552D75E38B00C7005A /* TipCalculatorTests */,
-				D639D85F2D75E38B00C7005A /* TipCalculatorUITests */,
+				D639D8452D75E38900C7005A /* SplitNTipCalc */,
+				D639D8552D75E38B00C7005A /* SplitNTipCalcTests */,
+				D639D85F2D75E38B00C7005A /* SplitNTipCalcUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,12 +267,12 @@
 /* Begin PBXTargetDependency section */
 		D639D8582D75E38B00C7005A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D639D8452D75E38900C7005A /* TipCalculator */;
+			target = D639D8452D75E38900C7005A /* SplitNTipCalc */;
 			targetProxy = D639D8572D75E38B00C7005A /* PBXContainerItemProxy */;
 		};
 		D639D8622D75E38B00C7005A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D639D8452D75E38900C7005A /* TipCalculator */;
+			target = D639D8452D75E38900C7005A /* SplitNTipCalc */;
 			targetProxy = D639D8612D75E38B00C7005A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -331,6 +313,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G5GZ932LT2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -348,6 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -394,6 +378,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G5GZ932LT2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -405,6 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -420,31 +406,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TipCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = G5GZ932LT2;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_ASSET_PATHS = "\"SplitTip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TipCalculator/Fonts-Info.plist";
+				INFOPLIST_FILE = "SplitNTipCalc-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Split & Tip";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanakastrati.TipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanakastrati.SplitTipCalc;
+				PRODUCT_NAME = "Split & Tip: Tip Calculator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,31 +443,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TipCalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = G5GZ932LT2;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEVELOPMENT_ASSET_PATHS = "\"SplitTip/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TipCalculator/Fonts-Info.plist";
+				INFOPLIST_FILE = "SplitNTipCalc-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Split & Tip";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanakastrati.TipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanakastrati.SplitTipCalc;
+				PRODUCT_NAME = "Split & Tip: Tip Calculator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -487,7 +481,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G5GZ932LT2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -496,7 +489,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TipCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitNTipCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SplitNTipCalc";
 			};
 			name = Debug;
 		};
@@ -506,7 +499,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G5GZ932LT2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
@@ -515,7 +507,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipCalculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TipCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SplitNTipCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SplitNTipCalc";
 			};
 			name = Release;
 		};
@@ -524,7 +516,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G5GZ932LT2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanakastrati.TipCalculatorUITests;
@@ -541,7 +532,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G5GZ932LT2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanakastrati.TipCalculatorUITests;
@@ -556,7 +546,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D639D8412D75E38900C7005A /* Build configuration list for PBXProject "TipCalculator" */ = {
+		D639D8412D75E38900C7005A /* Build configuration list for PBXProject "SplitNTipCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D639D8682D75E38B00C7005A /* Debug */,
@@ -565,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D639D86A2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "TipCalculator" */ = {
+		D639D86A2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "SplitNTipCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D639D86B2D75E38B00C7005A /* Debug */,
@@ -574,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D639D86D2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
+		D639D86D2D75E38B00C7005A /* Build configuration list for PBXNativeTarget "SplitNTipCalcTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D639D86E2D75E38B00C7005A /* Debug */,
@@ -583,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D639D8702D75E38B00C7005A /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
+		D639D8702D75E38B00C7005A /* Build configuration list for PBXNativeTarget "SplitNTipCalcUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D639D8712D75E38B00C7005A /* Debug */,
