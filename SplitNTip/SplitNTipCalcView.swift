@@ -1,5 +1,5 @@
 //
-//  SplitTipCalcView.swift
+//  SplitNTipCalcView.swift
 //  TipCalculator
 //
 //  Created by Hana Kastrati on 3/7/25.
@@ -11,7 +11,8 @@ struct SplitNTipCalcView: View {
 	
 
 	@State private var billAmount = ""
-	@AppStorage("defaultTip") private var tipPercent: Int = 20
+	@AppStorage("defaultTip") private var defaultTip: Int = 20
+	@State private var tipPercent = 20
 	@State private var isSplitting = false
 	@State private var splitCount = ""
 	private let tipOptions = [5, 10, 15, 18, 20, 25]
@@ -115,7 +116,6 @@ struct SplitNTipCalcView: View {
 				Text("The tip amount is: $\(tipAmount, specifier: "%.2f")")
 				Text("Your bill total is: $\(totalAmount, specifier: "%.2f")")
 				Text("Total per person is: $\(totalPersonAmount, specifier: "%.2f")")
-					.font(.body)
 			}
 			Spacer()
 			
@@ -124,6 +124,11 @@ struct SplitNTipCalcView: View {
 			.onTapGesture {
 				hideKeyboard()
 			}
+		
+		//default tip
+		.onAppear {
+			tipPercent = defaultTip
+		}
 	}// body
 } //struct
 
