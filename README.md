@@ -1,8 +1,6 @@
 [![wakatime](https://wakatime.com/badge/github/hanakastrati/SplitNTip.svg)](https://wakatime.com/badge/github/hanakastrati/SplitNTip)
 ![Platform](https://img.shields.io/badge/platform-iOS-blue)
 ![Swift](https://img.shields.io/badge/language-Swift-orange)
-![OpenAI](https://img.shields.io/badge/AI-OpenAI-ff69b4)
-![Status](https://img.shields.io/badge/status-in%20development-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 # Split N Tip  
