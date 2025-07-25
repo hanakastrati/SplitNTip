@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/github/hanakastrati/SplitNTip.svg)](https://wakatime.com/badge/github/hanakastrati/SplitNTip)
+
 # Split N Tip  
 *by Hana Kastrati*
 
@@ -59,5 +61,3 @@ This project is © 2025 Hana Kastrati. All rights reserved.
 
 The code is provided for educational and portfolio viewing only.  
 Do not use, copy, or distribute without written permission.
-   
-[![wakatime](https://wakatime.com/badge/github/hanakastrati/SplitNTip.svg)](https://wakatime.com/badge/github/hanakastrati/SplitNTip)
