@@ -1,3 +1,8 @@
+[![wakatime](https://wakatime.com/badge/github/hanakastrati/SplitNTip.svg)](https://wakatime.com/badge/github/hanakastrati/SplitNTip)
+![Platform](https://img.shields.io/badge/platform-iOS-blue)
+![Swift](https://img.shields.io/badge/language-Swift-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # Split N Tip  
 *by Hana Kastrati*
 
@@ -53,5 +58,9 @@ This update improves the interface, fixes a bug where the default tip was uninte
 [Download Split N Tip on the App Store](https://apps.apple.com/us/app/splittipcalc/id6744050869)
 
 _Version 1.0 available now. This README will be updated once version 1.1 is approved._
-   
-[![wakatime](https://wakatime.com/badge/user/018e8b1d-3598-4e16-856f-9201de0965b0/project/37bf084b-2f54-4b13-b7b2-28a4266fc155.svg)](https://wakatime.com/badge/user/018e8b1d-3598-4e16-856f-9201de0965b0/project/37bf084b-2f54-4b13-b7b2-28a4266fc155)
+
+## 📄 License
+This project is © 2025 Hana Kastrati. All rights reserved.
+
+The code is provided for educational and portfolio viewing only.  
+Do not use, copy, or distribute without written permission.
